@@ -7,7 +7,6 @@ class HomeState {
   final bool isLoading;
   final String? error;
   final List<NoteEntity>? notes;
-  final bool isEmpty;
   final bool isToggle;
 
   const HomeState({
@@ -16,7 +15,6 @@ class HomeState {
     this.isLoading = true,
     this.error,
     this.notes,
-    this.isEmpty = false,
     this.isToggle = false,
   });
 
@@ -35,7 +33,6 @@ class HomeState {
       isLoading: isLoading ?? this.isLoading,
       error: error ?? this.error,
       notes: notes ?? this.notes,
-      isEmpty: isEmpty ?? this.isEmpty,
       isToggle: isToggle ?? this.isToggle,
     );
   }
